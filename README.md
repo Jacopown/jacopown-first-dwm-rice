@@ -51,6 +51,17 @@ WORK IN PROGRESS...
         ```zsh
         sudo make && sudo make clean install
         ```
+## DMENU INSTALLATION
+1. Download [dmenu](https://tools.suckless.org/dmenu/)...
+
+     ```zsh
+    cd ~/.suckless && git clone https://git.suckless.org/dmenu && cd dmenu
+      ```
+1. ...and install it:
+
+    ```zsh
+    sudo make && sudo make clean install 
+    ```
 ## DWM INSTALLATION
 1. Install [xwallpaper](https://archlinux.org/packages/community/x86_64/xwallpaper/), [firefox](https://wiki.archlinux.org/index.php/Firefox) and [xcompmgr](https://wiki.archlinux.org/index.php/Xcompmgr) :
 
@@ -97,19 +108,52 @@ WORK IN PROGRESS...
         sudo make && sudo make clean install
         ```
 
----[ZSH AND OH MY ZSH INSTALL]---
-- run 'sudo pacman -Sy zsh zsh-completions' 
-- run 'zsh' (now you should see zsh configuration program, feel free to set it as you prefere,i left it default for now)
-- run 'zsh /usr/share/zsh/functions/Newuser/zsh-newuser-install -f' if configuration program doesn't start automatically
-- run 'chsh -l' to see zsh path (in my case i see two zsh folder, i used '/usr/bin/zsh')
-- run 'chsh -s /usr/bin/zsh'
-- close and re-open terminal //FIXME check if needed
-- run 'sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"'
-- close and re-open terminal //FIXME check if needed
-- run 'cd ~/.oh-my-zsh/custom/plugins'
-- run 'git clone https://github.com/zsh-users/zsh-syntax-highlighting.git'
-- run 'git clone https://github.com/zsh-users/zsh-autosuggestions'
-- run 'sudo mkdir -p /usr/local/share/fonts/ttf/MesloNerdFontPatched'
+## ZSH AND OH MY ZSH INSTALL]
+1. Install [zsh](https://wiki.archlinux.org/index.php/Zsh) and [zsh-completions](https://archlinux.org/packages/community/any/zsh-completions/) :
+
+    ```zsh
+    sudo pacman -Sy zsh zsh-completions
+    ```
+1. Execute zsh:
+
+    ```zsh
+    zsh
+    ```
+    This should autostart the configuration program, if not:
+    ```zsh
+    zsh /usr/share/zsh/functions/Newuser/zsh-newuser-install -f
+    ```
+    Feel free to configure it as you prefere
+1. Check zsh path (in my case /usr/bin/zsh):
+
+    ```zsh
+    chsh -l
+    ```
+1. Set zsh as your default terminal:
+
+    ```zsh
+    chsh -s /usr/bin/zsh
+    ```
+1. Close and re-open terminal
+<!---//FIXME check if needed --->
+1. Install [Oh My Zsh](https://github.com/ohmyzsh/ohmyzsh) :
+
+    ```zsh
+    sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+    ```
+1. Close and re-open terminal 
+<!---//FIXME check if needed--->
+1. Install plugins (fell to add yours)
+
+    ```zsh
+    git -C ~/.oh-my-zsh/custom/plugins clone https://github.com/zsh-users/zsh-syntax-highlighting.git && git -C ~/.oh-my-zsh/custom/plugins clone https://github.com/zsh-users/zsh-autosuggestions
+    ```
+1. Make font's folder for [powerlevel10k](https://github.com/romkatv/powerlevel10k) theme:
+
+    ```zsh
+    sudo mkdir -p /usr/local/share/fonts/ttf/MesloNerdFontPatched
+    ```
+1. Install fonts 
 - run 'wget -P /usr/local/share/fonts/ttf/MesloNerdFontPatched https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Regular.ttf'
 - run 'wget -P /usr/local/share/fonts/ttf/MesloNerdFontPatched https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Bold.ttf'
 - run 'wget -P /usr/local/share/fonts/ttf/MesloNerdFontPatched https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Italic.ttf'
