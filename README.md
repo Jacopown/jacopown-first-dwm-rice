@@ -2,93 +2,96 @@
 WORK IN PROGRESS...
 <!--//TODO add installation process-->
 
-## ST AND DWM INSTALLATION
+## ST INSTALLATION
 
-1. Open terminal and run:
+1. Install [git](https://wiki.archlinux.org/index.php/Git) and [wget](https://wiki.archlinux.org/index.php/Wget) :
+
     ```zsh
-    sudo pacman -Sy firefox xcompmgr xwallpaper wget git
+    sudo pacman -Sy wget git
     ```
-    This will install firefox, a compositor for trasparency fetures, a simple tool for wallpaper changing, wget and git
-<!--//TODO optionaly change it with picom-->
-2. Download .xinit file:
+1. Download my [.xinit](https://wiki.archlinux.org/index.php/Xinit) file :
 
     ```zsh
     wget -P ~/ https://raw.githubusercontent.com/Jacopown/jacopown-first-dwm-rice/master/.xinitrc
     ```
-3. Create a directory for st...
+1. Create a directory for [st](https://st.suckless.org/)...
 
     ```zsh
     mkdir ~/.suckless/ && cd $_
     ```
-4. ...than download it...
+1. ...than download it...
 
     ```zsh
     git clone https://github.com/Jacopown/my-st-build.git && cd /my-st-build
     ```
-5. ...finally install it:
+1. ...finally install it:
 
     ```zsh
     sudo make && sudo make clean install
     ```
-6. ### OPTIONAL(changing colors, opacity and other preferences): 
-   1. Open st config...
+1. OPTIONAL(changing colors, opacity and other preferences:
+    1. Open st config...
+
+        ```zsh
+        sudo vim ~/.suckless/my-st-build/config.def.h
+        ```
+        ...and modify settings as you want 
+        <!--//TODO change with nvim-->
+    1. Enter st directory...
+
+        ```zsh
+        cd ~/.suckless/my-st-build
+        ```
+    1. ...make it clean...
+
+        ```zsh
+        sudo make clean && rm -f config.h
+        ```
+    1. ...and install it again:
+
+        ```zsh
+        sudo make && sudo make clean install
+        ```
+1. Install [xwallpaper](https://archlinux.org/packages/community/x86_64/xwallpaper/), [firefox](https://wiki.archlinux.org/index.php/Firefox) and [xcompmgr](https://wiki.archlinux.org/index.php/Xcompmgr) :
 
     ```zsh
-    sudo vim ~/.suckless/my-st-build/config.def.h
+    sudo pacman -Sy xwallpaper firefox xcompmgr
     ```
-    ...and modify settings as you want 
-    <!--//TODO change with nvim-->
-   2. Enter st directory...
-
-    ```zsh
-    cd ~/.suckless/my-st-build
-    ```
-   3. ...make it clean...
-
-    ```zsh
-    sudo make clean && rm -f config.h
-    ```
-   4. ...and install it again:
-
-    ```zsh
-    sudo make && sudo make clean install
-      ```
-7. Set the wallpaper:
+1. Set the wallpaper:
 
     ```zsh
     mkdir ~/Wallpapers && wget -P ~/Wallpapers -O bg1.jpg https://wallpapercave.com/download/aesthetic-desktop-1366x768-wallpapers-wp4789545?nocache=1
     ```
-8. Download DWM...
+1. Download [dwm](https://dwm.suckless.org/)...
 
     ```zsh
     cd ~/.suckless && git clone https://github.com/Jacopown/my-dwm-build.git && cd /my-dwm-build
     ```
-9. ...and install it:
+1. ...and install it:
 
     ```zsh
     sudo make && sudo make clean install
     ```
-10. Logout and re-login or reboot for modifies to take place
-
-11. ### OPTIONAL(changing colors, keybinds and other preferences):
+1. Logout and re-login or reboot for modifies to take place
+1. OPTIONAL(changing colors, keybinds and other preferences)
     1. Open dwm configs...
 
         ```zsh
         sudo vim ~/.suckless/my-dwm-build/config.def.h
         ```
-    ...and modify settings as you want
-    <!--//TODO change with nvim-->
-    2. Enter dwm directory...
+        ...and modify settings as you want
+        <!--//TODO change with nvim-->
+    1. Enter dwm directory...
 
         ```zsh
         cd ~/.suckless/my-dwm-build
         ```
-    3. ...make it clean...
+    1. ...make it clean...
 
         ```zsh
         sudo make clean && rm -f config.h
         ```  
-    4. ...and install it again:
+    1. ...and install it again:
 
         ```zsh
         sudo make && sudo make clean install
