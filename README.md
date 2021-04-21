@@ -3,7 +3,6 @@ WORK IN PROGRESS...
 <!--//TODO add installation process-->
 
 ## ST INSTALLATION
-
 1. Install [git](https://wiki.archlinux.org/index.php/Git) and [wget](https://wiki.archlinux.org/index.php/Wget) :
 
     ```zsh
@@ -52,6 +51,7 @@ WORK IN PROGRESS...
         ```zsh
         sudo make && sudo make clean install
         ```
+## DWM INSTALLATION
 1. Install [xwallpaper](https://archlinux.org/packages/community/x86_64/xwallpaper/), [firefox](https://wiki.archlinux.org/index.php/Firefox) and [xcompmgr](https://wiki.archlinux.org/index.php/Xcompmgr) :
 
     ```zsh
