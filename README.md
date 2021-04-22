@@ -2,7 +2,7 @@
 
 ## ARCH INSTALLATION
 
-WORK IN PROGRESS...
+Work in progress...
 <!--//TODO add installation process-->
 
 ## ST INSTALLATION
@@ -288,11 +288,6 @@ WORK IN PROGRESS...
 
 1. Reboot
 
----[VSCODE INSTALLATION]--- (optional)
-- sudo pacman -Sy libgnome-keyring polkit lxsession
-- run 'yay -S visual-studio-code-bin'
-- run 'sudo vim ~/.xinitrc' and uncomment vscode line
-- //FIXME ability to save without sudo password
-- reboot
+## VSCODE INSTALLATION (optional)
 
-
+Work in progress... not working properly
