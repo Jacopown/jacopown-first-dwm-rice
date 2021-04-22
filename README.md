@@ -290,4 +290,15 @@ Work in progress...
 
 ## VSCODE INSTALLATION (optional)
 
-Work in progress... not working properly
+Work in progress...not working properly
+
+## MY ADDITIONAL PACKAGES
+
+|PACKAGE NAME|DESCRIPTION|
+|    :-:     |    :-:    |
+|[dunst](https://wiki.archlinux.org/index.php/Dunst)|is a suckless notification system|
+|[libnotify](https://wiki.archlinux.org/index.php/Desktop_notifications)|allows desktop notifications|
+|[flameshot](https://wiki.archlinux.org/index.php/Flameshot)|used to take screenshots|
+|[mpv](https://wiki.archlinux.org/index.php/Mpv)|minimalist video player|
+|[neofetch](https://github.com/dylanaraps/neofetch)|used to display some system informations|
+|[neovim](https://wiki.archlinux.org/index.php/Neovim)|better version of vim|
