@@ -41,11 +41,11 @@ Work in progress...
     1. Open st config...
 
         ```zsh
-        sudo vim ~/.suckless/my-st-build/config.def.h
+        sudo nvim ~/.suckless/my-st-build/config.def.h
         ```
 
         ...and modify settings as you want
-        <!--//TODO change with nvim-->
+
     1. Enter st directory...
 
         ```zsh
@@ -121,11 +121,11 @@ Work in progress...
     1. Open dwm configs...
 
         ```zsh
-        sudo vim ~/.suckless/my-dwm-build/config.def.h
+        sudo nvim ~/.suckless/my-dwm-build/config.def.h
         ```
 
         ...and modify settings as you want
-        <!--//TODO change with nvim-->
+
     1. Enter dwm directory...
 
         ```zsh
@@ -265,7 +265,7 @@ Work in progress...
 1. Enable dropbox start at login, uncomment dropbox line :
 
     ```zsh
-    sudo vim ~/.xinitrc
+    sudo nvim ~/.xinitrc
     ```
 
 1. Start dropbox and check his status :
