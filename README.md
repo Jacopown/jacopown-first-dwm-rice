@@ -110,7 +110,7 @@ Work in progress...
     sudo make && sudo make clean install
     ```
 
-1. Set xorg to start at login :
+1. Set graphical session to start at login :
 
     ```zsh
     sudo echo startx > ~/.bash_profile
@@ -164,29 +164,28 @@ Work in progress...
     zsh /usr/share/zsh/functions/Newuser/zsh-newuser-install -f
     ```
 
-    Feel free to configure it as you prefere.
-1. Check zsh path (in my case /usr/bin/zsh) :
-
-    ```zsh
-    chsh -l
-    ```
+    Type 0 to prevent the configuration program to pop up again.
 
 1. Set zsh as your default terminal :
 
     ```zsh
-    chsh -s /usr/bin/zsh
+    chsh -s $(which zsh)
     ```
 
-1. Close and re-open terminal.
-<!---//FIXME check if needed --->
+1. Set graphical session to start at login with zsh :
+
+    ```zsh
+    echo startx > ~/.zprofile
+    ```
+    
+1. Login and Logout or reboot. <!---//FIXME not sure if needed--->
+
 1. Install [Oh My Zsh](https://github.com/ohmyzsh/ohmyzsh) :
 
     ```zsh
     sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
     ```
 
-1. Close and re-open terminal.
-<!---//FIXME check if needed--->
 1. Install plugins (feel to add yours) :
 
     ```zsh
@@ -202,19 +201,19 @@ Work in progress...
 1. Install fonts :
 
     ```zsh
-    wget -P /usr/local/share/fonts/ttf/MesloNerdFontPatched https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Regular.ttf
+    sudo wget -P /usr/local/share/fonts/ttf/MesloNerdFontPatched https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Regular.ttf
     ```
 
     ```zsh
-    wget -P /usr/local/share/fonts/ttf/MesloNerdFontPatched https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Bold.ttf
+    sudo wget -P /usr/local/share/fonts/ttf/MesloNerdFontPatched https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Bold.ttf
     ```
 
     ```zsh
-    wget -P /usr/local/share/fonts/ttf/MesloNerdFontPatched https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Italic.ttf
+    sudo wget -P /usr/local/share/fonts/ttf/MesloNerdFontPatched https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Italic.ttf
     ```
 
     ```zsh
-    wget -P /usr/local/share/fonts/ttf/MesloNerdFontPatched https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Bold%20Italic.ttf
+    sudo wget -P /usr/local/share/fonts/ttf/MesloNerdFontPatched https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Bold%20Italic.ttf
     ```
 
     ```zsh
@@ -233,15 +232,13 @@ Work in progress...
     rm -rf ~/.zshrc && wget -P ~/ https://raw.githubusercontent.com/Jacopown/jacopown-first-dwm-rice/master/.zshrc && source ~/.zshrc
     ```
 
-1. If needed close and re-open terminal.
-    <!---//FIXME check if needed--->
-
-1. The config program should start automatically, if not run :
+1. Download my zsh theme configuration file :
 
     ```zsh
-    p10k configure
+    rm -rf ~/.p10k.zsh && sudo wget -P ~/ https://raw.githubusercontent.com/Jacopown/jacopown-first-dwm-rice/master/.p10k.zsh
     ```
-    <!---//TODO add step-by-step guide for my theme setup--->
+
+1. Close and re-open terminal.
 
 ## YAY INSTALLATION (optional but highly recommended)
 
