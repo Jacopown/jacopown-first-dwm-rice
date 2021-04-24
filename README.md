@@ -7,12 +7,12 @@ Work in progress...
 
 ## ST INSTALLATION
 
-1. Install [git](https://wiki.archlinux.org/index.php/Git) and [wget](https://wiki.archlinux.org/index.php/Wget) :
+1. Install [git](https://wiki.archlinux.org/index.php/Git) , [wget](https://wiki.archlinux.org/index.php/Wget) , [base-devel](https://archlinux.org/groups/x86_64/base-devel/) , [neovim](https://wiki.archlinux.org/index.php/Neovim) and [libxft](https://archlinux.org/packages/extra/x86_64/libxft/) :
 
     ```zsh
-    sudo pacman -Sy wget git
+    sudo pacman -Sy wget git base-devel neovim libxft
     ```
-
+    <!---//TODO add links--->
 1. Download my [.xinit](https://wiki.archlinux.org/index.php/Xinit) file :
 
     ```zsh
@@ -28,10 +28,10 @@ Work in progress...
 1. ...than download it...
 
     ```zsh
-    git clone https://github.com/Jacopown/my-st-build.git && cd /my-st-build
+    git clone https://github.com/Jacopown/my-st-build.git && cd ./my-st-build
     ```
 
-1. ...finally install it:
+1. ...finally install it :
 
     ```zsh
     sudo make && sudo make clean install
@@ -58,7 +58,7 @@ Work in progress...
         sudo make clean && rm -f config.h
         ```
 
-    1. ...and install it again:
+    1. ...and install it again :
 
         ```zsh
         sudo make && sudo make clean install
@@ -66,13 +66,19 @@ Work in progress...
 
 ## DMENU INSTALLATION
 
+1. Install [libxinerama](https://archlinux.org/packages/extra/x86_64/libxinerama/) :
+
+    ```zsh
+    sudo pacman -Sy libxinerama
+    ```
+
 1. Download [dmenu](https://tools.suckless.org/dmenu/)...
 
-     ```zsh
-    cd ~/.suckless && git clone https://git.suckless.org/dmenu && cd dmenu
-      ```
+    ```zsh
+    git -C ~/.suckless clone https://git.suckless.org/dmenu && cd ~/.suckless/dmenu
+    ```
 
-1. ...and install it:
+1. ...and install it :
 
     ```zsh
     sudo make && sudo make clean install 
@@ -80,28 +86,34 @@ Work in progress...
 
 ## DWM INSTALLATION
 
-1. Install [xwallpaper](https://archlinux.org/packages/community/x86_64/xwallpaper/), [firefox](https://wiki.archlinux.org/index.php/Firefox) and [xcompmgr](https://wiki.archlinux.org/index.php/Xcompmgr) :
+1. Install [xwallpaper](https://archlinux.org/packages/community/x86_64/xwallpaper/), [firefox](https://wiki.archlinux.org/index.php/Firefox) , [xcompmgr](https://wiki.archlinux.org/index.php/Xcompmgr) , [xorg-server](https://wiki.archlinux.org/index.php/xorg) and [xorg-xinit](https://wiki.archlinux.org/index.php/xorg) :
 
     ```zsh
-    sudo pacman -Sy xwallpaper firefox xcompmgr
+    sudo pacman -Sy xwallpaper firefox xcompmgr xorg-server xorg-xinit
     ```
 
 1. Set the wallpaper:
 
     ```zsh
-    mkdir ~/Wallpapers && wget -P ~/Wallpapers -O bg1.jpg https://wallpapercave.com/download/aesthetic-desktop-1366x768-wallpapers-wp4789545?nocache=1
+    mkdir ~/Wallpapers && wget -O ~/Wallpapers/bg1.jpg https://wallpapercave.com/download/aesthetic-desktop-1366x768-wallpapers-wp4789545?nocache=1
     ```
 
 1. Download [dwm](https://dwm.suckless.org/)...
 
     ```zsh
-    cd ~/.suckless && git clone https://github.com/Jacopown/my-dwm-build.git && cd /my-dwm-build
+    git -C ~/.suckless clone https://github.com/Jacopown/my-dwm-build.git && cd ~/.suckless/my-dwm-build
     ```
 
 1. ...and install it:
 
     ```zsh
     sudo make && sudo make clean install
+    ```
+
+1. Set xorg to start at login :
+
+    ```zsh
+    sudo echo startx > ~/.bash_profile
     ```
 
 1. Logout and re-login or reboot for modifies to take place
@@ -232,12 +244,6 @@ Work in progress...
     <!---//TODO add step-by-step guide for my theme setup--->
 
 ## YAY INSTALLATION (optional but highly recommended)
-
-1. Install [base-devel](https://archlinux.org/groups/x86_64/base-devel/) :
-
-    ```zsh
-    sudo pacman -Sy base-devel
-    ```
 
 1. Install yay
 
