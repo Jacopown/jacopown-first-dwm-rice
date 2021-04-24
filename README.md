@@ -7,7 +7,7 @@ Work in progress...
 
 ## ST INSTALLATION
 
-1. Install [git](https://wiki.archlinux.org/index.php/Git) , [wget](https://wiki.archlinux.org/index.php/Wget) , [base-devel](https://archlinux.org/groups/x86_64/base-devel/) , [neovim](https://wiki.archlinux.org/index.php/Neovim) and [libxft](https://archlinux.org/packages/extra/x86_64/libxft/) :
+1. Install [git](https://wiki.archlinux.org/index.php/Git), [wget](https://wiki.archlinux.org/index.php/Wget), [base-devel](https://archlinux.org/groups/x86_64/base-devel/), [neovim](https://wiki.archlinux.org/index.php/Neovim) and [libxft](https://archlinux.org/packages/extra/x86_64/libxft/) :
 
     ```zsh
     sudo pacman -Sy wget git base-devel neovim libxft
@@ -37,7 +37,7 @@ Work in progress...
     sudo make && sudo make clean install
     ```
 
-1. OPTIONAL(changing colors, opacity and other preferences:
+1. OPTIONAL(changing colors, opacity and other preferences :
     1. Open st config...
 
         ```zsh
@@ -86,13 +86,13 @@ Work in progress...
 
 ## DWM INSTALLATION
 
-1. Install [xwallpaper](https://archlinux.org/packages/community/x86_64/xwallpaper/), [firefox](https://wiki.archlinux.org/index.php/Firefox) , [xcompmgr](https://wiki.archlinux.org/index.php/Xcompmgr) , [xorg-server](https://wiki.archlinux.org/index.php/xorg) and [xorg-xinit](https://wiki.archlinux.org/index.php/xorg) :
+1. Install [xwallpaper](https://archlinux.org/packages/community/x86_64/xwallpaper/), [firefox](https://wiki.archlinux.org/index.php/Firefox), [xcompmgr](https://wiki.archlinux.org/index.php/Xcompmgr), [xorg-server](https://wiki.archlinux.org/index.php/xorg) and [xorg-xinit](https://wiki.archlinux.org/index.php/xorg) :
 
     ```zsh
     sudo pacman -Sy xwallpaper firefox xcompmgr xorg-server xorg-xinit
     ```
 
-1. Set the wallpaper:
+1. Set the wallpaper :
 
     ```zsh
     mkdir ~/Wallpapers && wget -O ~/Wallpapers/bg1.jpg https://wallpapercave.com/download/aesthetic-desktop-1366x768-wallpapers-wp4789545?nocache=1
@@ -104,7 +104,7 @@ Work in progress...
     git -C ~/.suckless clone https://github.com/Jacopown/my-dwm-build.git && cd ~/.suckless/my-dwm-build
     ```
 
-1. ...and install it:
+1. ...and install it :
 
     ```zsh
     sudo make && sudo make clean install
@@ -138,7 +138,7 @@ Work in progress...
         sudo make clean && rm -f config.h
         ```
 
-    1. ...and install it again:
+    1. ...and install it again :
 
         ```zsh
         sudo make && sudo make clean install
@@ -152,32 +152,32 @@ Work in progress...
     sudo pacman -Sy zsh zsh-completions
     ```
 
-1. Execute zsh:
+1. Execute zsh :
 
     ```zsh
     zsh
     ```
 
-    This should autostart the configuration program, if not:
+    This should autostart the configuration program, if not :
 
     ```zsh
     zsh /usr/share/zsh/functions/Newuser/zsh-newuser-install -f
     ```
 
-    Feel free to configure it as you prefere
-1. Check zsh path (in my case /usr/bin/zsh):
+    Feel free to configure it as you prefere.
+1. Check zsh path (in my case /usr/bin/zsh) :
 
     ```zsh
     chsh -l
     ```
 
-1. Set zsh as your default terminal:
+1. Set zsh as your default terminal :
 
     ```zsh
     chsh -s /usr/bin/zsh
     ```
 
-1. Close and re-open terminal
+1. Close and re-open terminal.
 <!---//FIXME check if needed --->
 1. Install [Oh My Zsh](https://github.com/ohmyzsh/ohmyzsh) :
 
@@ -185,21 +185,21 @@ Work in progress...
     sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
     ```
 
-1. Close and re-open terminal
+1. Close and re-open terminal.
 <!---//FIXME check if needed--->
-1. Install plugins (fell to add yours)
+1. Install plugins (feel to add yours) :
 
     ```zsh
     git -C ~/.oh-my-zsh/custom/plugins clone https://github.com/zsh-users/zsh-syntax-highlighting.git && git -C ~/.oh-my-zsh/custom/plugins clone https://github.com/zsh-users/zsh-autosuggestions
     ```
 
-1. Make font's folder for [powerlevel10k](https://github.com/romkatv/powerlevel10k) theme:
+1. Make font's folder for [powerlevel10k](https://github.com/romkatv/powerlevel10k) theme :
 
     ```zsh
     sudo mkdir -p /usr/local/share/fonts/ttf/MesloNerdFontPatched
     ```
 
-1. Install fonts:
+1. Install fonts :
 
     ```zsh
     wget -P /usr/local/share/fonts/ttf/MesloNerdFontPatched https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Regular.ttf
@@ -221,22 +221,22 @@ Work in progress...
     fc-cache
     ```
 
-1. Install zsh theme:
+1. Install zsh theme :
 
     ```zsh
     git -C ~/.oh-my-zsh/custom/themes clone https://github.com/romkatv/powerlevel10k.git
     ```
 
-1. Download my .zshrc:
+1. Download my .zshrc :
 
     ```zsh
     rm -rf ~/.zshrc && wget -P ~/ https://raw.githubusercontent.com/Jacopown/jacopown-first-dwm-rice/master/.zshrc && source ~/.zshrc
     ```
 
-1. If needed close and re-open terminal
+1. If needed close and re-open terminal.
     <!---//FIXME check if needed--->
 
-1. The config program should start automatically, if not run:
+1. The config program should start automatically, if not run :
 
     ```zsh
     p10k configure
@@ -245,7 +245,7 @@ Work in progress...
 
 ## YAY INSTALLATION (optional but highly recommended)
 
-1. Install yay
+1. Install yay :
 
     ```zsh
     mkdir ~/temp && git -C ~/temp clone https://aur.archlinux.org/yay.git && cd ~/temp/yay && makepkg -si && rm -fr ~/yay
@@ -262,37 +262,37 @@ Work in progress...
     yay -S dropbox dropbox-cli
     ```
 
-1. Enable dropbox start at login, uncomment dropbox line:
+1. Enable dropbox start at login, uncomment dropbox line :
 
     ```zsh
     sudo vim ~/.xinitrc
     ```
 
-1. Start dropbox and check his status:
+1. Start dropbox and check his status :
 
     ```zsh
     dropbox && dropbox-cli status
     ```
 
-1. Some settings:
+1. Some settings :
 
     ```zsh
     dropbox-cli autostart && dropbox-cli throttle unlimited unlimited
     ```
 
-1. Check files sync status:
+1. Check files sync status :
 
     ```zsh
     dropbox-cli ls
     ```
 
-1. Choose files to exclude from syncing:
+1. Choose files to exclude from syncing :
 
     ```zsh
     dropobox-cli exclude <file to be excluded>
     ```
 
-1. Reboot
+1. Reboot.
 
 ## VSCODE INSTALLATION (optional)
 
