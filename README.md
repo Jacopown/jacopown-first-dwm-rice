@@ -305,4 +305,9 @@ Work in progress...not working properly
 |[mpv](https://wiki.archlinux.org/index.php/Mpv)|Minimalist video player|
 |[neofetch](https://github.com/dylanaraps/neofetch)|Used to display some system informations|
 |[neovim](https://wiki.archlinux.org/index.php/Neovim)|Better version of vim|
-|[sxiv](https://wiki.archlinux.org/index.php/Sxiv)| 	Is a minimalist image viewer.|
+|[sxiv](https://wiki.archlinux.org/index.php/Sxiv)|Is a minimalist image viewer|
+|[pipewire](https://wiki.archlinux.org/index.php/PipeWire)|Multimedia low-level framework|
+|[pipewire-docs](https://wiki.archlinux.org/index.php/PipeWire)|For pipewire documentation|
+|[pipewire-alsa](https://wiki.archlinux.org/index.php/PipeWire)|For compatibility|
+|[pipewire-pulse](https://wiki.archlinux.org/index.php/PipeWire)|For compatibility|
+|[pipewire-jack](https://wiki.archlinux.org/index.php/PipeWire)|For compatibility|
