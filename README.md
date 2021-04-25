@@ -311,3 +311,6 @@ Work in progress...not working properly
 |[pipewire-alsa](https://wiki.archlinux.org/index.php/PipeWire)|For compatibility|
 |[pipewire-pulse](https://wiki.archlinux.org/index.php/PipeWire)|For compatibility|
 |[pipewire-jack](https://wiki.archlinux.org/index.php/PipeWire)|For compatibility|
+|[xournalpp](https://github.com/xournalpp/xournalpp)|Program i use to take university notes|
+|[xf86-input-wacom](https://wiki.archlinux.org/index.php/wacom_tablet)|For wacom tablet|
+|[usbutils](https://archlinux.org/packages/core/x86_64/usbutils/)|Utility for usb|
