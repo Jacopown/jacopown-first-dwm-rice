@@ -299,9 +299,10 @@ Work in progress...not working properly
 
 |PACKAGE NAME|DESCRIPTION|
 |    :-:     |    :-:    |
-|[dunst](https://wiki.archlinux.org/index.php/Dunst)|is a suckless notification system|
-|[libnotify](https://wiki.archlinux.org/index.php/Desktop_notifications)|allows desktop notifications|
-|[flameshot](https://wiki.archlinux.org/index.php/Flameshot)|used to take screenshots|
-|[mpv](https://wiki.archlinux.org/index.php/Mpv)|minimalist video player|
-|[neofetch](https://github.com/dylanaraps/neofetch)|used to display some system informations|
-|[neovim](https://wiki.archlinux.org/index.php/Neovim)|better version of vim|
+|[dunst](https://wiki.archlinux.org/index.php/Dunst)|Is a suckless notification system|
+|[libnotify](https://wiki.archlinux.org/index.php/Desktop_notifications)|Allows desktop notifications|
+|[flameshot](https://wiki.archlinux.org/index.php/Flameshot)|Used to take screenshots|
+|[mpv](https://wiki.archlinux.org/index.php/Mpv)|Minimalist video player|
+|[neofetch](https://github.com/dylanaraps/neofetch)|Used to display some system informations|
+|[neovim](https://wiki.archlinux.org/index.php/Neovim)|Better version of vim|
+|[sxiv](https://wiki.archlinux.org/index.php/Sxiv)| 	Is a minimalist image viewer.|
