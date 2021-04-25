@@ -177,7 +177,7 @@ Work in progress...
     ```zsh
     echo startx > ~/.zprofile
     ```
-    
+
 1. Login and Logout or reboot. <!---//FIXME not sure if needed--->
 
 1. Install [Oh My Zsh](https://github.com/ohmyzsh/ohmyzsh) :
@@ -189,7 +189,7 @@ Work in progress...
 1. Install plugins (feel to add yours) :
 
     ```zsh
-    git -C ~/.oh-my-zsh/custom/plugins clone https://github.com/zsh-users/zsh-syntax-highlighting.git && git -C ~/.oh-my-zsh/custom/plugins clone https://github.com/zsh-users/zsh-autosuggestions
+    git -C ~/.oh-my-zsh/custom/plugins clone https://github.com/zdharma/fast-syntax-highlighting.git && git -C ~/.oh-my-zsh/custom/plugins clone https://github.com/zsh-users/zsh-autosuggestions
     ```
 
 1. Make font's folder for [powerlevel10k](https://github.com/romkatv/powerlevel10k) theme :
