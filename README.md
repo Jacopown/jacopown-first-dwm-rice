@@ -245,7 +245,7 @@ Work in progress...
 1. Install yay :
 
     ```zsh
-    mkdir ~/temp && git -C ~/temp clone https://aur.archlinux.org/yay.git && cd ~/temp/yay && makepkg -si && rm -fr ~/yay
+    mkdir ~/temp && git -C ~/temp clone https://aur.archlinux.org/yay.git && cd ~/temp/yay && makepkg -si && rm -fr ~/temp
     ```
 
 1. Reboot
