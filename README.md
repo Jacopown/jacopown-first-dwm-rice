@@ -291,9 +291,25 @@ Work in progress...
 
 1. Reboot.
 
-## VSCODE INSTALLATION (optional)
+## VSCODE INSTALLATION (optional, yay installation needed)
 
-Work in progress...not working properly
+1. Install [gnome-keyring](https://wiki.archlinux.org/index.php/GNOME/Keyring) and [libsecret](https://wiki.gnome.org/Projects/Libsecret) :
+
+    ```zsh
+    sudo pacman -Sy gnome-keyring libsecret
+    ```
+
+1. Install [vscode](https://wiki.archlinux.org/index.php/Visual_Studio_Code) :
+
+    ```zsh
+    yay -Sy visual-studio-code-bin
+    ```
+
+1. Edit .xinitrc uncommenting vscode line :
+
+    ```zsh
+    sudo nvim ~/.xinitrc
+    ```
 
 ## MY ADDITIONAL PACKAGES
 
