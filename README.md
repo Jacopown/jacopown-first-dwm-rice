@@ -330,3 +330,5 @@ Work in progress...
 |[xournalpp](https://github.com/xournalpp/xournalpp)|Program i use to take university notes|
 |[xf86-input-wacom](https://wiki.archlinux.org/index.php/wacom_tablet)|For wacom tablet|
 |[usbutils](https://archlinux.org/packages/core/x86_64/usbutils/)|Utility for usb|
+|[sl](https://archlinux.org/packages/community/x86_64/sl/)|Really important to make the system work|
+|[figlet](http://www.figlet.org/)|Really important to make the system work|
