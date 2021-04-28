@@ -12,7 +12,7 @@ Work in progress...
     ```zsh
     sudo pacman -Sy wget git base-devel neovim libxft
     ```
- 
+
 1. Download my [.xinit](https://wiki.archlinux.org/index.php/Xinit) file :
 
     ```zsh
@@ -240,9 +240,25 @@ Work in progress...
 
 1. Close and re-open terminal.
 
+## PIPEWIRE INSTALLATION  
+
+1. Install [pipewire](https://wiki.archlinux.org/index.php/PipeWire) and compatibility packages :
+
+    ```zsh
+    sudo pacman -Sy pipewire pipewire-docs pipewire-alsa pipewire-pulse pipewire-jack pipewire-media-session
+    ```
+
+1. Enable pipewire :
+
+    ```zsh
+    systemctl --user enable pipewire
+    ```
+
+1.Reboot.
+
 ## YAY INSTALLATION (optional but highly recommended)
 
-1. Install yay :
+1. Install [yay](https://github.com/Jguer/yay) :
 
     ```zsh
     mkdir ~/temp && git -C ~/temp clone https://aur.archlinux.org/yay.git && cd ~/temp/yay && makepkg -si && rm -fr ~/temp
@@ -309,6 +325,7 @@ Work in progress...
     ```zsh
     sudo nvim ~/.xinitrc
     ```
+
 1. Reboot.
 
 ## MY ADDITIONAL PACKAGES
@@ -322,11 +339,6 @@ Work in progress...
 |[neofetch](https://github.com/dylanaraps/neofetch)|Used to display some system informations|
 |[neovim](https://wiki.archlinux.org/index.php/Neovim)|Better version of vim|
 |[sxiv](https://wiki.archlinux.org/index.php/Sxiv)|Is a minimalist image viewer|
-|[pipewire](https://wiki.archlinux.org/index.php/PipeWire)|Multimedia low-level framework|
-|[pipewire-docs](https://wiki.archlinux.org/index.php/PipeWire)|For pipewire documentation|
-|[pipewire-alsa](https://wiki.archlinux.org/index.php/PipeWire)|For compatibility|
-|[pipewire-pulse](https://wiki.archlinux.org/index.php/PipeWire)|For compatibility|
-|[pipewire-jack](https://wiki.archlinux.org/index.php/PipeWire)|For compatibility|
 |[xournalpp](https://github.com/xournalpp/xournalpp)|Program i use to take university notes|
 |[xf86-input-wacom](https://wiki.archlinux.org/index.php/wacom_tablet)|For wacom tablet|
 |[usbutils](https://archlinux.org/packages/core/x86_64/usbutils/)|Utility for usb|
