@@ -368,3 +368,7 @@ Work in progress...
 |[usbutils](https://archlinux.org/packages/core/x86_64/usbutils/)|Utility for usb|
 |[sl](https://archlinux.org/packages/community/x86_64/sl/)|Really important to make the system work|
 |[figlet](http://www.figlet.org/)|Really important to make the system work|
+|[mad-db](https://wiki.archlinux.org/index.php/man_page)| Lets you read man pages of programs|
+|[spotify](https://github.com/Spotifyd/spotifyd)|Simply Spotify (AUR)|
+|[ttf-fira-code](https://github.com/tonsky/FiraCode)|Font for vscode|
+|[nerd-fonts-hermit](https://aur.archlinux.org/packages/nerd-fonts-hermit/)|System font|
