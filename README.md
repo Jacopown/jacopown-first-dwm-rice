@@ -86,16 +86,20 @@ Work in progress...
 
 ## DWM INSTALLATION
 
-1. Install [xwallpaper](https://archlinux.org/packages/community/x86_64/xwallpaper/), [firefox](https://wiki.archlinux.org/index.php/Firefox), [xcompmgr](https://wiki.archlinux.org/index.php/Xcompmgr), [xorg-server](https://wiki.archlinux.org/index.php/xorg) and [xorg-xinit](https://wiki.archlinux.org/index.php/xorg) :
+1. Install [xwallpaper](https://archlinux.org/packages/community/x86_64/xwallpaper/), [firefox](https://wiki.archlinux.org/index.php/Firefox), [xcompmgr](https://wiki.archlinux.org/index.php/Xcompmgr), [xorg-server](https://wiki.archlinux.org/index.php/xorg) and [xorg-xinit](https://wiki.archlinux.org/index.php/xorg), [pywal](https://github.com/dylanaraps/pywal) :
 
     ```zsh
-    sudo pacman -Sy xwallpaper firefox xcompmgr xorg-server xorg-xinit
+    sudo pacman -Sy xwallpaper firefox xcompmgr xorg-server xorg-xinit python-pywal
     ```
 
-1. Set the wallpaper :
+1. Download a wallpaper
+
+1. Create a Wallpaper directory, put the wallpaper there and rename it "bg1.jpg" :
+
+1. Generate color palette :
 
     ```zsh
-    mkdir ~/Wallpapers && wget -O ~/Wallpapers/bg1.jpg https://wallpapercave.com/download/aesthetic-desktop-1366x768-wallpapers-wp4789545?nocache=1
+    wal -i ~/Wallpapers/bg1.jpg
     ```
 
 1. Download [dwm](https://dwm.suckless.org/)...
