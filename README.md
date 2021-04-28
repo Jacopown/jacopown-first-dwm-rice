@@ -12,7 +12,7 @@ Work in progress...
     ```zsh
     sudo pacman -Sy wget git base-devel neovim libxft
     ```
-    <!---//TODO add links--->
+ 
 1. Download my [.xinit](https://wiki.archlinux.org/index.php/Xinit) file :
 
     ```zsh
@@ -178,7 +178,7 @@ Work in progress...
     echo startx > ~/.zprofile
     ```
 
-1. Login and Logout or reboot. <!---//FIXME not sure if needed--->
+1. Reboot.
 
 1. Install [Oh My Zsh](https://github.com/ohmyzsh/ohmyzsh) :
 
@@ -249,7 +249,6 @@ Work in progress...
     ```
 
 1. Reboot
-    <!---//FIXME check if needed--->
 
 ## DROPBOX SYNC FOLDER SETUP (optional, yay installation needed)
 
@@ -310,6 +309,7 @@ Work in progress...
     ```zsh
     sudo nvim ~/.xinitrc
     ```
+1. Reboot.
 
 ## MY ADDITIONAL PACKAGES
 
