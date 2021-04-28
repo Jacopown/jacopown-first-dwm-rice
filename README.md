@@ -270,6 +270,26 @@ Work in progress...
 
 1. Reboot
 
+## GTK THEME SETUP
+
+1. Install [lxappearance](https://archlinux.org/packages/community/x86_64/lxappearance/) :
+
+    ```zsh
+    sudo pacman -Sy lxappearance
+    ```
+
+1. Install [gtk-theme-arc-gruvbox-git](https://github.com/cyrinux/arc-gruvbox-theme)
+
+    ```zsh
+    yay -Sy gtk-theme-arc-gruvbox-git
+    ```
+
+1. Set the new gtk theme :
+
+    ```zsh
+    lxappearance
+    ```
+
 ## DROPBOX SYNC FOLDER SETUP (optional, yay installation needed)
 
 1. install [dropbox](https://wiki.archlinux.org/index.php/dropbox) and [dropbox-cli](https://aur.archlinux.org/packages/dropbox-cli/) :
