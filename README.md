@@ -249,7 +249,7 @@ Work in progress...
 1. Install [pipewire](https://wiki.archlinux.org/index.php/PipeWire) and compatibility packages :
 
     ```zsh
-    sudo pacman -Sy pipewire pipewire-docs pipewire-alsa pipewire-pulse pipewire-jack pipewire-media-session
+    sudo pacman -Sy pipewire pipewire-docs pipewire-alsa pipewire-pulse pipewire-jack pipewire-media-session pamixer
     ```
 
 1. Enable pipewire :
