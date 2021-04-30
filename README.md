@@ -373,3 +373,4 @@ Work in progress...
 |[spotify](https://github.com/Spotifyd/spotifyd)|Simply Spotify (AUR)|
 |[ttf-fira-code](https://github.com/tonsky/FiraCode)|Font for vscode|
 |[nerd-fonts-hermit](https://aur.archlinux.org/packages/nerd-fonts-hermit/)|System font|
+|[ntfs-3g](https://wiki.archlinux.org/index.php/NTFS-3G)|Allows to mount NTFS partitions|
