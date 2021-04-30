@@ -1,4 +1,4 @@
-# DWM PASTEL RICE
+# MY FIRST RICE
 
 ## ARCH INSTALLATION
 
@@ -75,7 +75,7 @@ Work in progress...
 1. Download [dmenu](https://tools.suckless.org/dmenu/)...
 
     ```zsh
-    git -C ~/.suckless clone https://git.suckless.org/dmenu && cd ~/.suckless/dmenu
+    git -C ~/.suckless clone https://github.com/Jacopown/my-dmenu-build.git && cd ~/.suckless/dmenu
     ```
 
 1. ...and install it :
@@ -249,7 +249,7 @@ Work in progress...
 1. Install [pipewire](https://wiki.archlinux.org/index.php/PipeWire) and compatibility packages :
 
     ```zsh
-    sudo pacman -Sy pipewire pipewire-docs pipewire-alsa pipewire-pulse pipewire-jack pipewire-media-session pamixer
+    sudo pacman -Sy pipewire pipewire-docs pipewire-alsa pipewire-pulse pipewire-jack pipewire-media-session pamixerk
     ```
 
 1. Enable pipewire :
@@ -368,6 +368,7 @@ Work in progress...
 |[usbutils](https://archlinux.org/packages/core/x86_64/usbutils/)|Utility for usb|
 |[sl](https://archlinux.org/packages/community/x86_64/sl/)|Really important to make the system work|
 |[figlet](http://www.figlet.org/)|Really important to make the system work|
+|[cbonsai](https://gitlab.com/jallbrit/cbonsai)|Really important to make the system work (AUR)|
 |[mad-db](https://wiki.archlinux.org/index.php/man_page)| Lets you read man pages of programs|
 |[spotify](https://github.com/Spotifyd/spotifyd)|Simply Spotify (AUR)|
 |[ttf-fira-code](https://github.com/tonsky/FiraCode)|Font for vscode|
