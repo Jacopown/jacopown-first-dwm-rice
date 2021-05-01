@@ -374,3 +374,5 @@ Work in progress...
 |[ttf-fira-code](https://github.com/tonsky/FiraCode)|Font for vscode|
 |[nerd-fonts-hermit](https://aur.archlinux.org/packages/nerd-fonts-hermit/)|System font|
 |[ntfs-3g](https://wiki.archlinux.org/index.php/NTFS-3G)|Allows to mount NTFS partitions|
+|[zathura](https://wiki.archlinux.org/index.php/zathura)|Document viewer|
+|[zathura-pdf-mupdf](https://pwmt.org/projects/zathura-pdf-mupdf/)|Zathura plugin for PDF,EPUB and XPS filetype support |
