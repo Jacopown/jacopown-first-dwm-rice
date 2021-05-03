@@ -86,10 +86,10 @@ Work in progress...
 
 ## DWM INSTALLATION
 
-1. Install [xwallpaper](https://archlinux.org/packages/community/x86_64/xwallpaper/), [firefox](https://wiki.archlinux.org/index.php/Firefox), [xcompmgr](https://wiki.archlinux.org/index.php/Xcompmgr), [xorg-server](https://wiki.archlinux.org/index.php/xorg) and [xorg-xinit](https://wiki.archlinux.org/index.php/xorg), [pywal](https://github.com/dylanaraps/pywal) :
+1. Install [xwallpaper](https://archlinux.org/packages/community/x86_64/xwallpaper/), [firefox](https://wiki.archlinux.org/index.php/Firefox), [picom](https://wiki.archlinux.org/title/Picom), [xorg-server](https://wiki.archlinux.org/index.php/xorg) and [xorg-xinit](https://wiki.archlinux.org/index.php/xorg), [pywal](https://github.com/dylanaraps/pywal) :
 
     ```zsh
-    sudo pacman -Sy xwallpaper firefox xcompmgr xorg-server xorg-xinit python-pywal
+    sudo pacman -Sy xwallpaper firefox picom xorg-server xorg-xinit python-pywal
     ```
 
 1. Download a wallpaper
